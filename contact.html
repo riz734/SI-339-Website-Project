@@ -1,0 +1,144 @@
+<!-- contact -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='viewport' content='width=device-width' initialscale='1'>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fredericka%20the%20Great' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    
+    <title>BK-201</title>
+            
+    <script type="text/javascript">
+        function checkForm(){
+            var a = document.getElementById("name")
+            var b = document.getElementById("email")
+            var c = document.getElementById("msg")
+
+            if (a.value.length == 0){
+                document.getElementById("nameerrormsg").style.display = "block"; a = 0;}
+            else {
+                document.getElementById("nameerrormsg").style.display = "none";}
+        
+            if (b.value.length == 0){
+                document.getElementById("emailerrormsg").style.display = "block"; b = 0}
+            else {
+                document.getElementById("emailerrormsg").style.display = "none"; }
+
+
+            if (b == 0 || a == 0){
+                alert("Form is not completed, please complete to submit!")
+                return false;
+            }
+        }  
+    </script>
+
+</head>
+<body class="form-background">
+
+
+
+    <div role="main">
+
+        <a href="#info" class="jump">Jump to Content</a>
+
+
+        <h1><a href="index.html">BK-201</a></h1>
+
+        <nav id="region1">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "avatars.html">Avatars</a></li>
+                <li><a href = "stats.html">Stats</a></li>
+                <li><a href = "contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <p class='form_text' id="info">
+            If you want to contact me for any reason, don't hesitate to do so. While I have been an active member of the community for a long time, I have not been very active recently. However, I am still playing the game regularly and would love to connect with more people. 
+            If you need help with anything in the game, or want to learn more about any of the mechanics feel free to contact me.
+        </p>
+
+        <p class='form_text'>
+            I am currently a member of a server on Discord called "Simple Community", where our main goal is to help other players with anything they need. The game itsself is simple, 
+            so we seek ways to expand and enrich our game experience. We stand for this community. We see it's value and want to support it's existence and expansion. 
+            We do so by bringing people together who have done (or will do) outstanding jobs of supporting the community, and people who are willing to back the ideas and actions of those individuals with gold, 
+            clout or simply aknowledgement.
+        </p>
+
+        <p class="form_text">
+            If you would like to join our community, feel free to include it in the message. If you want to contact me about anything else (such as quest farming, selling diamonds, etc.), feel free to private message
+            me in game or Discord, or you can just fill out the form below.
+        </p>
+        <br>
+
+                <form class="contact-form"
+                action="https://formspree.io/xwkwbyjk"
+                method="POST"
+    >           <fieldset>
+                <label>
+                    In-Game Name<br>
+                    <input type="text" name="name" placeholder="your IGN" id="name">
+                </label>
+                <p class="errormsg" id="nameerrormsg">Please enter your IGN!</p>
+                <br><br>
+
+                <label>
+                    Email<br>
+                    <input type="text" name="email" placeholder="namestuff@email.com" id="email">
+                </label>
+                <p class="errormsg" id="emailerrormsg">Please enter your email!</p>
+                <br><br>
+
+                <label>
+                        Discord Tag <br>
+                        <input type="text" name="name" placeholder="ID#1234">
+                </label>
+                <br><br>
+
+
+
+                <label>
+                    Message<br>
+                    <textarea name="message" rows="4" cols="30" id="msg"> </textarea><br>
+                </label>
+                <p class="errormsg" id="msgerrormsg">Please enter a message!</p>
+
+                
+                <button type="submit"> Send</button>
+
+            </fieldset>
+        </form>
+
+
+    </div>
+    
+    <footer>
+        <ul>
+            <li class="footer-item"><a href="https://web.simple-mmo.com/user/view/204889" target="_blank"><img class="footer-img" src="images/smmo_icon.png" alt="SMMO icon"></a></li>
+            <li class="footer-item"><a href="https://steamcommunity.com/id/riz8d/" target="_blank"><img class="footer-img" src="images/steam.png" alt="Steam icon"></a></li>
+
+        </ul>
+        <p>site created by Shahbab Ahmed</p>
+    </footer>
+
+
+    <script>
+        $("#subscribe").click(function(){
+          $("#emailfield").toggle("slow");
+        })
+    </script>
+
+
+</body>
+</html>
