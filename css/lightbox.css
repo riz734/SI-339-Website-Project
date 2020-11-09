@@ -1,10 +1,5 @@
-/* img{
-  height:30vw;
-} */
-
 html.lb-disable-scrolling {
   overflow: hidden;
-  /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -37,9 +32,7 @@ html.lb-disable-scrolling {
   max-width: inherit;
   max-height: none;
   border-radius: 3px;
-
-  /* Image border */
-  border: 4px solid white;
+  border: 4px solid rgb(85, 80, 80);
 }
 
 .lightbox a img {
@@ -56,7 +49,8 @@ html.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-image: url("../images/bg_lightbox.png");
+  background-size: cover;
 }
 
 .lb-outerContainer:after {
@@ -80,7 +74,7 @@ html.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
+  background: url(../images/loading_fire.gif) no-repeat;
 }
 
 .lb-nav {
@@ -111,7 +105,7 @@ html.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../images/prev.png) left 48% no-repeat;
+  background: url(../images/left_arrow.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -129,7 +123,7 @@ html.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../images/next.png) right 48% no-repeat;
+  background: url(../images/right_arrow.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
