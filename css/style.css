@@ -7,6 +7,12 @@
 p {
     animation: 1.5s slide-up;
     margin-top:0%;
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    color: white;
+
 }
 
 @keyframes slide-up {
@@ -72,6 +78,7 @@ h1 {
     margin-left: 5%;
     margin-top: 4%;
     font-size: 50px;
+    color: white;
     
 }
 
@@ -104,10 +111,11 @@ nav ul {
 
 nav a {
     text-decoration: none;
+    color: #ff0b0b;
 }
 
 li a:link{
-    color: #faf4f4;
+    color: #ff0b0b;
 }
 
 li a:visited {
@@ -122,14 +130,6 @@ li a.current{
     font-weight: bold;
     text-decoration: underline;
 }
-h1 a {
-    color: white;
-    text-decoration: none;
-}
-
-h1 a:hover {
-    color: wheat;
-}
 
 
 body {
@@ -139,7 +139,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     
-    color: white;
 }
 
 .container img:hover {
@@ -147,20 +146,10 @@ body {
 }
 
 
-
-
-p {
-    display: block;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 20px;
-
-}
-
-
-
-
 /* Contact */
+label {
+    color: white;
+}
 form{
     margin-right: 20%;
     margin-left: 20%;
@@ -284,6 +273,7 @@ img {
         margin-right: 0%;
         margin-top: 0%;
         justify-content: center;
+        color: white;
     }
 
     li {
@@ -354,6 +344,7 @@ img {
         margin-right: 0%;
         margin-top: 0%;
         justify-content: center;
+        color: white;
     }
 
     li {
@@ -419,6 +410,7 @@ img {
         display: inline-block;
         margin-left: 5%;
         margin-top: 4%;
+        color: white;
     }
 
     li {
