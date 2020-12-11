@@ -35,9 +35,6 @@ html.lb-disable-scrolling {
   border: 4px solid rgb(85, 80, 80);
 }
 
-.lightbox a img {
-  border: none;
-}
 
 .lb-outerContainer {
   position: relative;
@@ -46,9 +43,6 @@ html.lb-disable-scrolling {
   height: 250px;
   margin: 0 auto;
   border-radius: 4px;
-
-  /* Background color behind image.
-     This is visible during transitions. */
   background-image: url("../images/bg_lightbox.png");
   background-size: cover;
 }
@@ -170,9 +164,6 @@ html.lb-disable-scrolling {
   line-height: 1em;
 }
 
-.lb-data .lb-caption a {
-  color: #4ae;
-}
 
 .lb-data .lb-number {
   display: block;
